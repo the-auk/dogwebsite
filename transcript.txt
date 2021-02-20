@@ -1,0 +1,140 @@
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\dell>c:\openssl-win32\bin\openssl.exe
+OpenSSL> s_client -crlf -quiet -connect google.com:443
+depth=1 C = US, O = Google Trust Services, CN = GTS CA 1O1
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 C = US, ST = California, L = Mountain View, O = Google LLC, CN = *.googl
+e.com
+verify return:1
+1
+HTTP/1.0 400 Bad Request
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: no-referrer
+Content-Length: 1555
+Date: Sat, 20 Feb 2021 17:36:06 GMT
+
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-wi
+dth">
+  <title>Error 400 (Bad Request)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{backgrou
+nd:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height
+:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/error
+s/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflo
+w:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (m
+ax-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0
+}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo
+_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-reso
+lution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/
+2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:ur
+l(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png)
+0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:ur
+l(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png)
+no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:5
+4px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>400.</b> <ins>ThatGÇÖs an error.</ins>
+  <p>Your client has issued a malformed or illegal request.  <ins>ThatGÇÖs all w
+e know.</ins>
+read:errno=0
+-------------------------------------------------------------------------------------------------------------------------
+OpenSSL> s_client -crlf -connect google.com:443
+CONNECTED(0000011C)
+depth=1 C = US, O = Google Trust Services, CN = GTS CA 1O1
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 C = US, ST = California, L = Mountain View, O = Google LLC, CN = *.googl
+e.com
+verify return:1
+---
+Certificate chain
+ 0 s:C = US, ST = California, L = Mountain View, O = Google LLC, CN = *.google.c
+om
+   i:C = US, O = Google Trust Services, CN = GTS CA 1O1
+ 1 s:C = US, O = Google Trust Services, CN = GTS CA 1O1
+   i:OU = GlobalSign Root CA - R2, O = GlobalSign, CN = GlobalSign
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIJhjCCCG6gAwIBAgIRAJqpJQj6G3+pBQAAAACHSiYwDQYJKoZIhvcNAQELBQAw
+QjELMAkGA1UEBhMCVVMxHjAcBgNVBAoTFUdvb2dsZSBUcnVzdCBTZXJ2aWNlczET
+MBEGA1UEAxMKR1RTIENBIDFPMTAeFw0yMTAxMjYwOTAxMDBaFw0yMTA0MjAwOTAw
+NTlaMGYxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQH
+Ew1Nb3VudGFpbiBWaWV3MRMwEQYDVQQKEwpHb29nbGUgTExDMRUwEwYDVQQDDAwq
+Lmdvb2dsZS5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAT8QvapiMbhr4Y+
+4OFNjzBtA+z3RazinqH9g7wuPyCRyXUUngSqZ7tG1obEt4qJCHi1TbttnCyjlDDM
+VxMdaLmxo4IHHDCCBxgwDgYDVR0PAQH/BAQDAgeAMBMGA1UdJQQMMAoGCCsGAQUF
+BwMBMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFNTp8uOAUxKdFY2bcsGoeoQlgV08
+MB8GA1UdIwQYMBaAFJjR+G4Q68+b7GCfGJAboOt9Cf0rMGgGCCsGAQUFBwEBBFww
+WjArBggrBgEFBQcwAYYfaHR0cDovL29jc3AucGtpLmdvb2cvZ3RzMW8xY29yZTAr
+BggrBgEFBQcwAoYfaHR0cDovL3BraS5nb29nL2dzcjIvR1RTMU8xLmNydDCCBNcG
+A1UdEQSCBM4wggTKggwqLmdvb2dsZS5jb22CDSouYW5kcm9pZC5jb22CFiouYXBw
+ZW5naW5lLmdvb2dsZS5jb22CCSouYmRuLmRldoISKi5jbG91ZC5nb29nbGUuY29t
+ghgqLmNyb3dkc291cmNlLmdvb2dsZS5jb22CGCouZGF0YWNvbXB1dGUuZ29vZ2xl
+LmNvbYITKi5mbGFzaC5hbmRyb2lkLmNvbYIGKi5nLmNvgg4qLmdjcC5ndnQyLmNv
+bYIRKi5nY3BjZG4uZ3Z0MS5jb22CCiouZ2dwaHQuY26CDiouZ2tlY25hcHBzLmNu
+ghYqLmdvb2dsZS1hbmFseXRpY3MuY29tggsqLmdvb2dsZS5jYYILKi5nb29nbGUu
+Y2yCDiouZ29vZ2xlLmNvLmlugg4qLmdvb2dsZS5jby5qcIIOKi5nb29nbGUuY28u
+dWuCDyouZ29vZ2xlLmNvbS5hcoIPKi5nb29nbGUuY29tLmF1gg8qLmdvb2dsZS5j
+b20uYnKCDyouZ29vZ2xlLmNvbS5jb4IPKi5nb29nbGUuY29tLm14gg8qLmdvb2ds
+ZS5jb20udHKCDyouZ29vZ2xlLmNvbS52boILKi5nb29nbGUuZGWCCyouZ29vZ2xl
+LmVzggsqLmdvb2dsZS5mcoILKi5nb29nbGUuaHWCCyouZ29vZ2xlLml0ggsqLmdv
+b2dsZS5ubIILKi5nb29nbGUucGyCCyouZ29vZ2xlLnB0ghIqLmdvb2dsZWFkYXBp
+cy5jb22CDyouZ29vZ2xlYXBpcy5jboIRKi5nb29nbGVjbmFwcHMuY26CFCouZ29v
+Z2xlY29tbWVyY2UuY29tghEqLmdvb2dsZXZpZGVvLmNvbYIMKi5nc3RhdGljLmNu
+gg0qLmdzdGF0aWMuY29tghIqLmdzdGF0aWNjbmFwcHMuY26CCiouZ3Z0MS5jb22C
+CiouZ3Z0Mi5jb22CFCoubWV0cmljLmdzdGF0aWMuY29tggwqLnVyY2hpbi5jb22C
+ECoudXJsLmdvb2dsZS5jb22CEyoud2Vhci5na2VjbmFwcHMuY26CFioueW91dHVi
+ZS1ub2Nvb2tpZS5jb22CDSoueW91dHViZS5jb22CFioueW91dHViZWVkdWNhdGlv
+bi5jb22CESoueW91dHViZWtpZHMuY29tggcqLnl0LmJlggsqLnl0aW1nLmNvbYIa
+YW5kcm9pZC5jbGllbnRzLmdvb2dsZS5jb22CC2FuZHJvaWQuY29tghtkZXZlbG9w
+ZXIuYW5kcm9pZC5nb29nbGUuY26CHGRldmVsb3BlcnMuYW5kcm9pZC5nb29nbGUu
+Y26CBGcuY2+CCGdncGh0LmNuggxna2VjbmFwcHMuY26CBmdvby5nbIIUZ29vZ2xl
+LWFuYWx5dGljcy5jb22CCmdvb2dsZS5jb22CD2dvb2dsZWNuYXBwcy5jboISZ29v
+Z2xlY29tbWVyY2UuY29tghhzb3VyY2UuYW5kcm9pZC5nb29nbGUuY26CCnVyY2hp
+bi5jb22CCnd3dy5nb28uZ2yCCHlvdXR1LmJlggt5b3V0dWJlLmNvbYIUeW91dHVi
+ZWVkdWNhdGlvbi5jb22CD3lvdXR1YmVraWRzLmNvbYIFeXQuYmUwIQYDVR0gBBow
+GDAIBgZngQwBAgIwDAYKKwYBBAHWeQIFAzAzBgNVHR8ELDAqMCigJqAkhiJodHRw
+Oi8vY3JsLnBraS5nb29nL0dUUzFPMWNvcmUuY3JsMIIBBAYKKwYBBAHWeQIEAgSB
+9QSB8gDwAHYARJRlLrDuzq/EQAfYqP4owNrmgr7YyzG1P9MzlrW2gagAAAF3PiOs
+rwAABAMARzBFAiBDskoT+4DqcMDSldu098kMmLvY+AypNh0KZ8VamQCvTwIhAJTT
+z7ZfC3Wfpqcadew28ec02h1lhZLVvHzKB0lzBoG3AHYA9lyUL9F3MCIUVBgIMJRW
+juNNExkzv98MLyALzE7xZOMAAAF3PiOsdAAABAMARzBFAiBsQrL6gy/xRMBycKa8
+Gwnx/QHDGRSlBwSFwzkA5vT3igIhAKz3KKczktiE1FSrk9zFwBOqxksw/wIvr+PP
+sWnJ/Do3MA0GCSqGSIb3DQEBCwUAA4IBAQCr82gezpbU0GfnG7o02H70mjouQBZQ
+lNM8JuNXz/aU+CrwoYJ//esxVNpPrMixBTOmafHCLDnsVeNbCHpJ2AU/ZTgl4x/l
+zB3CLZ4PsHo8vyFwIvbRX2biQRhWBdF53bvEjAddkHMSS+sja/EPDZqIt09/040D
+1QvnVB8COV4oEXGUOo5NsmS5Xg9GPqSB55YMUT3qesThh6FWZgwHNOsYkGDX2/qr
+QslRN0DGtMWV0ov9HcRUJ9zktAxMHsAQPZkl1VDLK9fOZiotwcASXZIwPeyHa4kh
+9AIGDv5ZLD2L1fAhrmD+KyK3XqRYlN3C0wu5AASOwK2j/MS3nvTPZVCO
+-----END CERTIFICATE-----
+subject=C = US, ST = California, L = Mountain View, O = Google LLC, CN = *.googl
+e.com
+
+issuer=C = US, O = Google Trust Services, CN = GTS CA 1O1
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ECDSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3853 bytes and written 392 bytes
+Verification error: unable to get local issuer certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 256 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 20 (unable to get local issuer certificate)
+---
